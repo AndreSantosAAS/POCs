@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">       
+    </head>
+    <body>
+        <div class="row">
+            <a onclick="M.toast({html: 'I am a toast! (on click)'})" class="btn">Toast!</a>
+        </div>
+        <div class="row">
+            <a class="waves-effect waves-light btn" onclick="M.toast({html: 'I am a toast!', classes: 'rounded'})">Round Toast!</a>
+        </div>
+        <div>
+            <a class="waves-effect waves-light btn" onclick="displayCustomHTMLToast()">Toast with Action</a>
+        </div>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+        <script src="js/custom_toasts.js"></script>
+        <script>
+            // display toast on load page
+            M.toast({html: 'I am a toast! (on load page)'})
+        </script>
+    </body>
+</html>
